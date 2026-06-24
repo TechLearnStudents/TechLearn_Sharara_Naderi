@@ -1,0 +1,41 @@
+.sidebar{
+    width:260px;
+
+    height:100vh;
+
+    display:flex;
+    flex-direction:column;
+
+    flex-shrink:0;
+
+    background:linear-gradient(
+        180deg,
+        #4173e7 0%,
+        #1447b4 40%,
+        #072b68 100%
+    );
+
+    padding:25px 18px;
+
+    overflow:hidden;
+
+    position:sticky;
+    top:0;
+}
+
+.sidebar-menu{
+    flex:1;
+    overflow-y:auto;
+
+    list-style:none;
+    padding:0;
+}
+
+.sidebar-menu::-webkit-scrollbar{
+    width:6px;
+}
+
+.sidebar-menu::-webkit-scrollbar-thumb{
+    background:rgba(255,255,255,.2);
+    border-radius:10px;
+}

@@ -1,0 +1,22 @@
+:root{
+
+    --shadow:0 5px 15px rgba(0,0,0,.08);
+
+    --primary-color:#2563eb;
+    --secondary-color:#0f172a;
+
+    --sidebar-color:#1e293b;
+    --content-bg:#f8fafc;
+
+    --card-bg:#ffffff;
+
+    --text-dark:#0f172a;
+    --text-light:#64748b;
+
+    --border:#e2e8f0;
+
+    --shadow:
+    0 4px 10px rgba(0,0,0,.08);
+
+    --radius:18px;
+}

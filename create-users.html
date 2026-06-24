@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TechBright LMS Dashboard</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="css/varaible.css">
+    <link rel="stylesheet" href="css/side.css">
+    <link rel="stylesheet" href="css/course.css">
+    <link rel="stylesheet" href="css/create-course.css">
+
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <aside class="sidebar">
+
+            <!-- Logo -->
+            <div class="sidebar-logo">
+                <img src="Images/logo.png" alt="Logo">
+
+                <div class="logo-text">
+                    <h2>TechBright</h2>
+                    <p>Computer Learning</p>
+                </div>
+            </div>
+
+
+
+            <!-- SIDEBAR -->
+
+            <ul class="sidebar-menu">
+
+                <li class="active">
+                    <a href="Dashboard.html">
+                        <i class="bi bi-grid-fill"></i>
+                        <span>Dashboard</span>
+                    </a>
+                </li>
+
+                <!-- Users -->
+                <li class="has-submenu">
+
+                    <div class="menu-header">
+                        <div class="menu-title">
+                            <i class="bi bi-people-fill"></i>
+                            <span>Users</span>
+                        </div>
+
+                        <i class="bi bi-chevron-down arrow"></i>
+                    </div>
+
+                    <ul class="submenu">
+                        <li>
+                            <a href="user.html">
+                                <i class="bi bi-list-ul"></i>
+                                All Users
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="user-create.html">
+                                <i class="bi bi-plus-circle"></i>
+                                Create User
+                            </a>
+                        </li>
+                    </ul>
+
+                </li>
+
+                <!-- Courses -->
+                <li class="has-submenu">
+
+                    <div class="menu-header">
+                        <div class="menu-title">
+                            <i class="bi bi-book-fill"></i>
+                            <span>Courses</span>
+                        </div>
+
+                        <i class="bi bi-chevron-down arrow"></i>
+                    </div>
+
+                    <ul class="submenu">
+                        <li>
+                            <a href="course.html">
+                                <i class="bi bi-list-ul"></i>
+                                All Courses
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="create-course.html">
+                                <i class="bi bi-plus-circle"></i>
+                                Create Course
+                            </a>
+                        </li>
+                    </ul>
+
+                </li>
+
+                <li>
+                    <a href="#">
+                        <i class="bi bi-chat-left-text-fill"></i>
+                        <span>Comments</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <i class="bi bi-credit-card-fill"></i>
+                        <span>Transactions</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <i class="bi bi-person-fill"></i>
+                        <span>My Profile</span>
+                    </a>
+                </li>
+
+
+
+                <li>
+                    <a href="#">
+                        <i class="bi bi-gear-fill"></i>
+                        <span>Settings</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <i class="bi bi-box-arrow-right"></i>
+                        <span>Logout</span>
+                    </a>
+                </li>
+
+
+
+        </aside>
+
+
+        </main>
+
+        <!-- CREATE USER HEADER -->
+
+        <div class="course-header">
+
+            <a href="user.html" class="glass-btn">
+                <i class="bi bi-arrow-left-circle-fill"></i>
+                Back to Users
+            </a>
+
+            <div class="course-title">
+                <h3>
+                    <i class="bi bi-person-plus-fill"></i>
+                    Create New User
+                </h3>
+            </div>
+
+        </div>
+
+        <!-- FORM CARD -->
+
+        <div class="course-form-card">
+
+            <form>
+
+                <div class="form-grid">
+
+                    <!-- Full Name -->
+
+                    <div class="form-group">
+
+                        <label>
+                            <i class="bi bi-person-fill"></i>
+                            Full Name
+                        </label>
+
+                        <input type="text" placeholder="Enter full name">
+
+                    </div>
+
+                    <!-- Username -->
+
+                    <div class="form-group">
+
+                        <label>
+                            <i class="bi bi-at"></i>
+                            Username
+                        </label>
+
+                        <input type="text" placeholder="Enter username">
+
+                    </div>
+
+                    <!-- Email -->
+
+                    <div class="form-group">
+
+                        <label>
+                            <i class="bi bi-envelope-fill"></i>
+                            Email Address
+                        </label>
+
+                        <input type="email" placeholder="Enter email">
+
+                    </div>
+
+                    <!-- Phone -->
+
+                    <div class="form-group">
+
+                        <label>
+                            <i class="bi bi-telephone-fill"></i>
+                            Phone Number
+                        </label>
+
+                        <input type="text" placeholder="+93 700000000">
+
+                    </div>
+
+                    <!-- Password -->
+
+                    <div class="form-group">
+
+                        <label>
+                            <i class="bi bi-lock-fill"></i>
+                            Password
+                        </label>
+
+                        <input type="password" placeholder="Enter password">
+
+                    </div>
+
+                    <!-- Confirm Password -->
+
+                    <div class="form-group">
+
+                        <label>
+                            <i class="bi bi-shield-lock-fill"></i>
+                            Confirm Password
+                        </label>
+
+                        <input type="password" placeholder="Confirm password">
+
+                    </div>
+
+                    <!-- Role -->
+
+                    <div class="form-group">
+
+                        <label>
+                            <i class="bi bi-person-badge-fill"></i>
+                            User Role
+                        </label>
+
+                        <select>
+
+                            <option>Student</option>
+                            <option>Instructor</option>
+                            <option>Admin</option>
+
+                        </select>
+
+                    </div>
+
+                    <!-- Status -->
+
+                    <div class="form-group">
+
+                        <label>
+                            <i class="bi bi-check-circle-fill"></i>
+                            Status
+                        </label>
+
+                        <select>
+
+                            <option>Active</option>
+                            <option>Blocked</option>
+                            <option>Pending</option>
+
+                        </select>
+
+                    </div>
+
+                </div>
+
+                <!-- Address -->
+
+                <div class="form-group full-width">
+
+                    <label>
+                        <i class="bi bi-geo-alt-fill"></i>
+                        Address
+                    </label>
+
+                    <textarea rows="4" placeholder="Enter address"></textarea>
+
+                </div>
+
+                <!-- Profile Photo -->
+
+                <div class="form-group full-width">
+
+                    <label>
+                        <i class="bi bi-image-fill"></i>
+                        Profile Photo
+                    </label>
+
+                    <input type="file">
+
+                </div>
+
+                <!-- BUTTONS -->
+
+                <div class="form-buttons">
+
+                    <button type="reset" class="cancel-btn">
+                        <i class="bi bi-arrow-counterclockwise"></i>
+                        Reset
+                    </button>
+
+                    <button type="submit" class="save-btn">
+                        <i class="bi bi-person-check-fill"></i>
+                        Create User
+                    </button>
+
+                </div>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</body>
+<script>
+    document.querySelectorAll('.menu-header').forEach(menu => {
+
+        menu.addEventListener('click', () => {
+
+            const parent = menu.parentElement;
+
+            parent.classList.toggle('active');
+
+        });
+
+    });
+</script>
+
+</html>
